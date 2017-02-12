@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bondforward.css">
+		
+		<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.20.min.js"></script>
+		<script type="text/javascript" src="js/student_bondforward.js"></script>
+	</head>
+	<body>
+		<div class="form-page">
+			<div class="form">
+				<form  method="get">
+					<div class="row">
+						<div class="col-sm-6">
+							<label>Full Name(*): </label>
+							<input id="name" type="text" name="name" />
+
+							<label>Email(*): </label>
+							<input id="email" type="email" name="email"/>
+							<!-- Password Field -->
+							<label>Password</label>
+							<input id="password" type="password" name="password" >
+							
+							<label>What school do you go to?(*)</label>
+							<input id="school" type="text" name="school">
+							<label>What's your phone number?</label>
+							<input type='tel' id="phone">
+							<label>What year are you?(*)</label>
+							<select id="year" required="required">
+								<option value="Freshman">Freshman</option>
+								<option value="Sophomore">Sophomore</option>
+								<option value="Junior">Junior</option>
+								<option value="Senior">Senior</option>
+							</select>
+							<div class="space"></div>
+						</div>
+						<div class="col-sm-6">
+							<label>What's your LinkedIn username?(*)</label>
+							<input id="linkedin_username" type="text" name="linkedin_username"/>
+							<label>What's your GitHub username?</label>
+							<input id="github_username" type="text" name="github_username"/>
+							<label>Are you looking for?(*)</label>
+							<select id="lookingFor" required="required" onchange="isMentorSelected(this)">
+								<option id="needmentor" value="mentorship">Mentors</option>
+								<option id="needintern" value="internship">Internship</option>
+							</select>
+							<div class="space"></div>
+
+							<div class="mentorships">
+								<label>What do you need mentorship in?</label>
+								<input name="mentor_checkbox" type="checkbox" value="Hardware Mentoring"/> Hardware Mentoring<br/>
+								<input name="mentor_checkbox" type="checkbox" value="Software Mentoring"/> Software Mentoring<br/>
+								<input name="mentor_checkbox" type="checkbox" value="Resume Critique" /> Resume review<br/>
+								<input name="mentor_checkbox" type="checkbox" value="Career Mentoring"/>Career Mentoring"<br/>
+								<input name="mentor_checkbox" type="checkbox" value="Mock Interview"/> Mock interview<br/>
+								<input name="mentor_checkbox" type="checkbox" value="Project Ideation"/> Project ideas/advice<br/>
+							</div>
+							<div id="internship" class="internships" style="display: none">
+								<label>What kind of internship(s) are you interested in?</label>
+								<input type="checkbox" /> Fall Internship<br/>
+								<input type="checkbox" /> Spring Internship<br/>
+								<input type="checkbox" /> Summer Internship<br/>
+								<input type="checkbox" /> Unpaid Internship<br/>
+							</div>	
+							<div class="space"></div>
+						</div>
+
+
+
+					</div>
+					
+
+
+					
+					<div id="buttons">
+						<input type="button" name="submit" onclick="sendValue();" value="Sign Up">    
+						<input type="reset" value="Clear"> 
+					</div>				     
+					<p>(*) required field</p>
+					If you already have an account, click <a href="signin.html">HERE</a> to sign in.
+
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

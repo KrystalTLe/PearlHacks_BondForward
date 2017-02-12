@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bondforward.css">
+		
+		<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.20.min.js"></script>
+		<script type="text/javascript" src="js/recruiter_bondforward.js"></script>
+	</head>
+	<body>
+		<div class="form-page">
+			<div class="form">
+				<form  method="get">
+					<div class="row">
+						<div class="col-sm-6">
+							<label>Full Name(*): </label>
+							<input id="name" type="text" name="name" />
+
+							<label>Email(*): </label>
+							<input id="email" type="email" name="email"/>
+							<!-- Password Field -->
+							<label>Password</label>
+							<input id="password" type="password" name="password" >
+							
+							<label>What company do you work for?(*)</label>
+							<input id="company" type="text" name="company">
+							<label>What's your phone number?</label>
+							<input type='tel' id="phone">
+
+                            
+							<div class="space"></div>
+						</div>
+						<div class="col-sm-6">
+							<label>What's your LinkedIn username?(*)</label>
+							<input id="linkedin_username" type="text" name="linkedin_username"/>
+                            <div class="college-level">
+								<label>What college-level students are you interested in?</label>
+								<input name="level_checkbox" type="checkbox" value="Freshman"/> Freshman<br/>
+								<input name="level_checkbox" type="checkbox" value="Sophomore"/> Sophomore<br/>
+								<input name="level_checkbox" type="checkbox" value="Junior" /> Junior<br/>
+								<input name="level_checkbox" type="checkbox" value="Senior"/>Senior"<br/>
+								
+							</div>	
+							<div id="type-of-internship" class="type-of-internship">
+								<label>What kind of internship(s) are available?</label>
+								<input name="type_of_internship" type="checkbox" value="Fall Internship" /> Fall Internship<br/>
+								<input name="type_of_internship" type="checkbox" value="Spring Internship"/> Spring Internship<br/>
+								<input name="type_of_internship" type="checkbox" value="Summer Internship"/> Summer Internship<br/>
+								<input name="type_of_internship" type="checkbox" value="Unpaid Internship"/> Unpaid Internship<br/>
+							</div>	
+							<div class="space"></div>
+						</div>
+
+
+
+					</div>
+					
+
+
+					
+					<div id="buttons">
+						<input type="button" name="submit" onclick="sendValue();" value="Sign Up">    
+						<input type="reset" value="Clear"> 
+					</div>				     
+
+					<p>(*) required field</p>
+					If you already have an account, click <a href="signin.html">HERE</a> to sign in.
+
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

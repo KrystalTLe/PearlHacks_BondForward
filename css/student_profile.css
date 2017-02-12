@@ -1,0 +1,27 @@
+body {
+	background: #6f726d; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left,#4B4B4B,#9F9D9D,#4B4B4B);
+	background: linear-gradient(to left,#4B4B4B,#9F9D9D,#4B4B4B);
+	font-family: "Roboto", sans-serif;
+	overflow: hidden;    
+}
+/*Form Container*/
+.form-page {
+	color: #4B4B4B;
+	width: 500px;
+	padding: 5% 0 0;/*Position form*/
+	margin: auto;
+}
+/*Main form */
+.form {
+	font-size: 12px;
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 600px;
+	margin: 0 auto 30px;
+	padding: 30px 50px 30px 50px;
+	text-align: left;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}

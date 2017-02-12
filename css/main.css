@@ -1,0 +1,38 @@
+body{
+	background-color: #e6e6e6;
+}
+.wrapper{
+	margin: 0 20%;
+}
+.top_bg{
+	max-width: 100%;
+	height: 280px;
+}
+.row input{
+	width: 100%;
+	background-color: #de5b97;
+	color: white;
+}
+.opportunity, .mentee, .mentor{
+	width: 100%;
+	height: 150px;
+}
+
+.story_header{
+	width: 100%;
+	height: 40px;
+	background-color: #de5b97;
+	color: white;
+	padding: 10px;
+}
+.story_img{
+	max-width: 100%;
+	height: 300px;
+}
+.tab_bar{
+	background-color: white;
+}
+.space{
+	width: 100%;
+	height: 50px;
+}

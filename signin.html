@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/signin.css">
+		
+		<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.20.min.js"></script>
+		<script type="text/javascript" src="js/signin.js"></script>
+	</head>
+	<body>
+		<div class="form-page">
+
+			<div class="form-signin">
+				<label >Email Address: </label>
+				<input id="email_address"type="email" name="email">
+				<label >Password: </label>
+				<input id="pw"type="password" name="pw">
+				<div id="buttons">
+				<input type="button" name="submit" onclick="authentication()" value="Sign In">    
+			</div>				     
+
+			<p>(*) required field</p>
+			
+		</div>
+	</body>
+</html>

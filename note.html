@@ -1,0 +1,26 @@
+
+
+
+<!-- Password Field -->
+<label>Password
+<input id="password" type="password" name="password" ></label>
+
+<label><input type="radio" name="record" value="add_record">
+Add Record</label>
+<label><input type="radio" name="record" value="retrieve_record" class="buttonSpace">
+Retrieve Record</label>
+
+<!--Buttons-->
+<div id="buttons">
+	<input type="submit" name="submit">    
+	<input type="reset" name="reset"> 
+</div>				     
+
+
+
+$profileurl = "http://www.linkedin.com/in/".$username;
+
+$fp = curl_init($profileurl);
+$response = curl_exec($fp);
+$response_code = curl_getinfo($fp, CURLINFO_HTTP_CODE);
+$validprofile = ($response_code == 200);

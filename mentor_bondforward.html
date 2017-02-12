@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bondforward.css">
+		
+		<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.20.min.js"></script>
+		<script type="text/javascript" src="js/mentor_bondforward.js"></script>
+	</head>
+	<body>
+		<div class="form-page">
+			<div class="form">
+				<form  method="get">
+					<div class="row">
+						<div class="col-sm-6">
+						<label>Full Name(*): </label>
+							<input id="name" type="text" name="name" />
+
+							<label>Email(*): </label>
+							<input id="email" type="email" name="email"/>
+							<!-- Password Field -->
+							<label>Password</label>
+							<input id="password" type="password" name="password" >
+
+							<label>What's your LinkedIn username?(*)</label>
+							<input id="linkedin_username" type="text" name="linkedin_username"/>
+							<label>What's your phone number?</label>
+							<input type='tel' id="phone">
+							
+						</div>
+						<div class="col-sm-6">
+							<div id="skills" class="skills">
+									
+								<label>What can you mentor?</label><br/>
+								<input name="mentorship_type" type="checkbox" value="Hardware Mentoring" /> Hardware Mentoring<br/>
+								<input name="mentorship_type" type="checkbox" value="Software Mentoring" /> Software Mentoring<br/>
+								<input name="mentorship_type" type="checkbox" value="Resume Critique" /> Resume Critique<br/>
+								<input name="mentorship_type" type="checkbox" value="Career Mentorship" /> Career Mentorship<br/>
+								<input name="mentorship_type" type="checkbox" value="Mock Interview" /> Mock interview<br/>
+								<input name="mentorship_type" type="checkbox" value="Project Ideation" /> Project Ideation<br/>
+							</div>
+							<div class="space"></div>
+							<div id="year" class="year">
+								<label>What college level are you looking to mentor?</label>
+								<input name="college_level" type="checkbox" value="Freshman" /> Freshman<br/>
+								<input name="college_level" type="checkbox" value="Sophomore" /> Sophomore<br/>
+								<input name="college_level" type="checkbox" value="Junior"  /> Junior<br/>
+								<input name="college_level" type="checkbox" value="Senior" /> Senior<br/>
+							</div>
+							<div class="space"></div>
+							<div class="space"></div><div class="space"></div>
+							
+						</div>
+					</div>					
+					<div id="buttons">
+						<input type="button" name="submit" onclick="sendValue();" value="Sign Up">    
+						<input type="reset" value="Clear"> 
+					</div>				     
+					<p>(*) required field</p>
+					If you already have an account, click <a href="signin.html">HERE</a> to sign in.
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
